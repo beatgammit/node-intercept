@@ -1,7 +1,7 @@
 var connect = require('connect'),
 	intercept = require('../lib/intercept'),
 	writeFns = [
-		function (next, data) {
+		function (next, data, encoding) {
 			console.log("I'm first");
 			next();
 		},
@@ -15,12 +15,9 @@ var connect = require('connect'),
 			next();
 		}
 	],
-	endFns = [
-		function (next, data) {
-			console.log("Party's over...");
-			next();
-		}
-	];
+	endFns = function (data, encoding) {
+		console.log("Party's over...");
+	};
 
 connect.createServer(
 	intercept({write: writeFns, end: endFns}),
