@@ -1,7 +1,7 @@
 {
   "name": "intercept",
   "description": "Intercepts ServerResponse methods so you can apply filters",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "homepage": "http://github.com/beatgammit/node-intercept",
   "repository": {
     "type": "git",
