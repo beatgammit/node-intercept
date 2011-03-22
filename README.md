@@ -29,6 +29,7 @@ So far, there are only two methods that are overridden.  The intercept function 
   * The first parameter will be used to update the the data to be passed to the native method
   * If no parameters are passed, life will go on, but your changes will not
 * After all callbacks have been processed, the native method will be called with the updated data object
+* If a callback was specified, it will be called last
 
 Source
 ======
