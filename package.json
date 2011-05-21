@@ -1,22 +1,23 @@
 {
-  "name": "intercept",
-  "description": "Intercepts ServerResponse methods so you can apply filters",
-  "version": "0.2.1",
-  "homepage": "http://github.com/beatgammit/node-intercept",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/beatgammit/node-intercept.git"
-  },
-  "author": "T. Jameson Little <t.jameson.little@gmail.com>",
-  "main": "lib/intercept.js",
-  "keywords": ["response", "filter", "server", "connect"],
-  "directories": {
-    "lib": "lib"
-  },
-  "contributors": [],
-  "dependencies": ["futures"],
-  "engines": {
-    "node": "*",
-	"futures": "1.9.4"
-  }
+	"name": "intercept",
+	"description": "Intercepts ServerResponse methods so you can apply filters",
+	"version": "0.3.0",
+	"homepage": "http://github.com/beatgammit/node-intercept",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/beatgammit/node-intercept.git"
+	},
+	"author": "T. Jameson Little <t.jameson.little@gmail.com>",
+	"main": "lib/intercept.js",
+	"keywords": ["response", "filter", "server", "connect"],
+	"directories": {
+		"lib": "lib"
+	},
+	"contributors": [],
+	"dependencies": {
+		"futures": "2.0.3"
+	},
+	"engines": {
+		"node": "*"
+	}
 }
